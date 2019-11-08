@@ -1,6 +1,6 @@
 # FRAUD DETECTION 
 
-![DeveloperPrince](https://github.com/account)
+![DeveloperPrince](https://developerprince.herokuapp.com/static/assets/images/logo.png)
 
 This is a machine learning project of being able to predict whether a transaction is a fraud or not.
 Take note the Dataset is taken from [zindi](zindi.africa) from a closed competition.
