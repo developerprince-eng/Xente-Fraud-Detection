@@ -1,0 +1,45 @@
+import fd.create_dataset as dt 
+import fd.generate_models as gm   
+from keras.models import model_from_json, model_from_yaml
+
+
+import os 
+os.getcwd()
+os.listdir(os.getcwd())
+
+def main():
+    create_dataset = dt.CREATE_DATASET()
+    data = create_dataset.__read_csv__('input/training.csv')
+    input_x, features_train, features_test, label_train, label_test = create_dataset.__obtain_data__csv__el__lbencode__('input/training.csv', 15, 1)
+    
+    print(input_x)
+
+    print(features_train)
+
+    print(label_train)
+
+    print("-----------------------------Run Test---------------------------")
+
+    print(features_test)
+
+    print(label_test)
+
+        #Initiate Generate Model Object
+    classifer = gm.GENERATE_MODEL() 
+
+        #Model Generation and Metric Evaluation
+    metric1 = classifer.kr_train_DNN_Seq_03(15, features_train, features_test, label_train,  label_test, batch_size=100)
+
+    print(f'\nAccuracy of your FNA Breast Cancer DNN AI Model is : \033[1m \033[92m{metric1}%')
+
+    model_yaml = classifer.to_yaml()
+    with open("seq_model.yaml", "w") as yaml_file:
+        yaml_file.write(model_yaml)
+    # serialize weights to HDF5
+    model_json = classifer.to_json()
+    with open("seq_model.json", "w") as json_file:
+        json_file.write(model_json)
+    classifer.save_weights("seq_model.h5")
+    print("Saved model to disk")
+if __name__ == "__main__":
+    main()
