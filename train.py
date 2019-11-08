@@ -32,14 +32,6 @@ def main():
 
     print(f'\nAccuracy of your FNA Breast Cancer DNN AI Model is : \033[1m \033[92m{metric1}%')
 
-    model_yaml = classifer.to_yaml()
-    with open("seq_model.yaml", "w") as yaml_file:
-        yaml_file.write(model_yaml)
-    # serialize weights to HDF5
-    model_json = classifer.to_json()
-    with open("seq_model.json", "w") as json_file:
-        json_file.write(model_json)
-    classifer.save_weights("seq_model.h5")
-    print("Saved model to disk")
+   
 if __name__ == "__main__":
     main()
