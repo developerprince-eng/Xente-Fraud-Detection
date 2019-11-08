@@ -28,9 +28,9 @@ def main():
     classifer = gm.GENERATE_MODEL() 
 
         #Model Generation and Metric Evaluation
-    metric1 = classifer.kr_train_DNN_Seq_03(15, features_train, features_test, label_train,  label_test, batch_size=100)
+    metric1 = classifer.kr_train_DNN_Seq_03(14, features_train, features_test, label_train,  label_test, batch_size=100)
 
-    print(f'\nAccuracy of your FNA Breast Cancer DNN AI Model is : \033[1m \033[92m{metric1}%')
+    print(f'\nAccuracy of your XENTE FRAUD DETECTION AI Model is : \033[1m \033[92m{metric1}%')
 
    
 if __name__ == "__main__":

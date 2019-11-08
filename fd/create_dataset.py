@@ -92,9 +92,9 @@ class CREATE_DATASET():
             temp_x12 = label_encoder.fit_transform(ref_input_x.iloc[ : , 11:12])
             temp_x13 = label_encoder.fit_transform(ref_input_x.iloc[ : , 12:13])
             temp_x14 = label_encoder.fit_transform(ref_input_x.iloc[ : , 13:14])
-            temp_x15 = label_encoder.fit_transform(ref_input_x.iloc[ : , 14:15])
+            # temp_x15 = label_encoder.fit_transform(ref_input_x.iloc[ : , 14:15])
 
-            temp_x = pd.DataFrame({'x1':temp_x1, 'x2':temp_x2, 'x3':temp_x3, 'x4':temp_x4, 'x5':temp_x5, 'x6':temp_x6, 'x7':temp_x7, 'x8':temp_x8, 'x9':temp_x9, 'x10':temp_x10, 'x11':temp_x11, 'x12':temp_x12, 'x13':temp_x13, 'x14':temp_x14, 'x15':temp_x15})
+            temp_x = pd.DataFrame({'x1':temp_x1, 'x2':temp_x2, 'x3':temp_x3, 'x4':temp_x4, 'x5':temp_x5, 'x6':temp_x6, 'x7':temp_x7, 'x8':temp_x8, 'x9':temp_x9, 'x10':temp_x10, 'x11':temp_x11, 'x12':temp_x12, 'x13':temp_x13, 'x14':temp_x14})
 
             input_x = pd.DataFrame(temp_x)
 
@@ -122,9 +122,9 @@ class CREATE_DATASET():
             temp_x12 = label_encoder.fit_transform(ref_input_x.iloc[ : , 11:12])
             temp_x13 = label_encoder.fit_transform(ref_input_x.iloc[ : , 12:13])
             temp_x14 = label_encoder.fit_transform(ref_input_x.iloc[ : , 13:14])
-            temp_x15 = label_encoder.fit_transform(ref_input_x.iloc[ : , 14:15])
+            # temp_x15 = label_encoder.fit_transform(ref_input_x.iloc[ : , 14:15])
 
-            temp_x = pd.DataFrame({'x1':temp_x1, 'x2':temp_x2, 'x3':temp_x3, 'x4':temp_x4, 'x5':temp_x5, 'x6':temp_x6, 'x7':temp_x7, 'x8':temp_x8, 'x9':temp_x9, 'x10':temp_x10, 'x11':temp_x11, 'x12':temp_x12, 'x13':temp_x13, 'x14':temp_x14, 'x15':temp_x15})
+            temp_x = pd.DataFrame({'x1':temp_x1, 'x2':temp_x2, 'x3':temp_x3, 'x4':temp_x4, 'x5':temp_x5, 'x6':temp_x6, 'x7':temp_x7, 'x8':temp_x8, 'x9':temp_x9, 'x10':temp_x10, 'x11':temp_x11, 'x12':temp_x12, 'x13':temp_x13, 'x14':temp_x14})
 
             input_x = pd.DataFrame(temp_x)
 
@@ -151,9 +151,9 @@ class CREATE_DATASET():
             temp_x12 = label_encoder.fit_transform(ref_input_x.iloc[ : , 11:12])
             temp_x13 = label_encoder.fit_transform(ref_input_x.iloc[ : , 12:13])
             temp_x14 = label_encoder.fit_transform(ref_input_x.iloc[ : , 13:14])
-            temp_x15 = label_encoder.fit_transform(ref_input_x.iloc[ : , 14:15])
+            # temp_x15 = label_encoder.fit_transform(ref_input_x.iloc[ : , 14:15])
 
-            temp_x = pd.DataFrame({'x1':temp_x1, 'x2':temp_x2, 'x3':temp_x3, 'x4':temp_x4, 'x5':temp_x5, 'x6':temp_x6, 'x7':temp_x7, 'x8':temp_x8, 'x9':temp_x9, 'x10':temp_x10, 'x11':temp_x11, 'x12':temp_x12, 'x13':temp_x13, 'x14':temp_x14, 'x15':temp_x15})
+            temp_x = pd.DataFrame({'x1':temp_x1, 'x2':temp_x2, 'x3':temp_x3, 'x4':temp_x4, 'x5':temp_x5, 'x6':temp_x6, 'x7':temp_x7, 'x8':temp_x8, 'x9':temp_x9, 'x10':temp_x10, 'x11':temp_x11, 'x12':temp_x12, 'x13':temp_x13, 'x14':temp_x14})
 
             input_x = pd.DataFrame(temp_x)
 

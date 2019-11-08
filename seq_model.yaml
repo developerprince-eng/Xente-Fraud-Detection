@@ -8,7 +8,7 @@ config:
       activity_regularizer: null
       batch_input_shape: !!python/tuple
       - null
-      - 15
+      - 14
       bias_constraint: null
       bias_initializer:
         class_name: Zeros
